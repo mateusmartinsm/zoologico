@@ -1,12 +1,17 @@
-/* configurações gerais */
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
     background-color: white;
-    /* background: linear-gradient(180deg, #61A6CD 0%, rgba(217, 217, 217, 0) 99.98%, rgba(217, 217, 217, 0) 99.99%); */
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -14,17 +19,20 @@ main {
     margin: 0 auto;
 }
 
-h1, h2, p, div, button, #logo-prefeitura {
+p, div, button, #logo-prefeitura {
     margin-left: 10px;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
+h1, h2 {
+    margin: 5vh 10px;
 }
 
 h1 {
     text-shadow: 3px 3px 3px grey;
+}
+
+h3 {
+    margin-left: 0.5em;
 }
 
 p {
@@ -42,12 +50,17 @@ footer {
     align-items: center;
     height: 10vh;
     background: linear-gradient(0deg, #61A6CD 0%, rgba(217, 217, 217, 0) 99.98%, rgba(217, 217, 217, 0) 99.99%);
+    margin-top: auto;
 }
 
 .link-p {
-    background: url("images/icons/link_externo.png") no-repeat 100% 0;
+    background: url("../img/icons/link_externo.png") no-repeat 100% 0;
     background-size: 16px 16px;
     padding-right: 19px;
+}
+
+p > a:hover {
+    color: green;
 }
 
 /* elementos reutilizáveis */
@@ -61,25 +74,28 @@ footer {
     max-height: 5vh;
 }
 
-.menu-principal {
-    display: flex;
-    justify-content: flex-end;
-    background: #61A6CD url('images/icons/zoo.png');
-    background-position-x: 30px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0;
+.logo-cabecalho {
+    height: 5em;
 }
 
-.menu-item {
+.menu-principal {
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: #61A6CD;
+    margin: 0;
     list-style-type: none;
 }
 
-.menu-link {
-    padding: 3em 1em;
+.logo-menu {
+    margin-right: auto;
+}
+
+.menu-principal > li > a  {
+    padding: 2em 1em;
     text-decoration: none;
     color: black;
+}
+
+.menu-principal > li > a:hover {
+    background-color: cadetblue;
 }
