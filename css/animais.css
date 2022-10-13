@@ -25,6 +25,10 @@ section {
     border-radius: 10px;
 }
 
+.categorias > a:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 .categorias__div--link:hover {
     background-color: cadetblue;
