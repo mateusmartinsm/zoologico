@@ -56,7 +56,7 @@ section {
 
 }
 
-#botao-inicio {
+.botao-inicio {
     display: flex;
     width: 250px;
     height: 3em;
